@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app-demo
+  name: app-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-demo
+  template:
+    metadata:
+      labels:
+        app: app-demo
+    spec:
+      containers:
+      - image: ghcr.io/wiktorvip/app-demo:1.0
+        name: app-demo
