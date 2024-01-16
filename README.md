@@ -7,5 +7,4 @@
 ```
 kubectl apply -f https://raw.githubusercontent.com/wiktorvip/app-demo/main/manifest/Deployment.yaml
 kubectl apply -f https://raw.githubusercontent.com/wiktorvip/app-demo/main/manifest/Service.yaml
-
 ```
