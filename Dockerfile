@@ -6,6 +6,6 @@ RUN pip install flask
 WORKDIR /opt/
 COPY . /opt/
 
-EXPOSE 7000
+EXPOSE 9004
 
 ENTRYPOINT ["python", "app.py"]
