@@ -1,11 +1,12 @@
-FROM python:3.10-alpine
-RUN pip install --upgrade pip
-RUN pip install flask
-#RUN pip install -r requirements.txt
+FROM python:alpine
 
-WORKDIR /opt/
 COPY . /opt/
+WORKDIR /opt
 
-EXPOSE 9004
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+EXPOSE 9080
 
 ENTRYPOINT ["python", "app.py"]
+
