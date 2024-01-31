@@ -17,3 +17,5 @@ spec:
       containers:
       - image: ghcr.io/wiktorvip/app-demo:1.0
         name: app-demo
+        ports:
+          - containerPort: 9080
